@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VideoBlog</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="wr">
+		<header>
+			<div class="navbar">
+				<ul class="items">
+					<li class="title"><h1 onclick="window.location='#';">Blog Name</h1></li>
+					<li class="item"><a href="#home" onclick="slowScroll('#home');">Home</a></li>
+					<li class="item"><a href="#about" onclick="slowScroll('#about');">About</a></li>
+					<li class="item"><a href="#works" onclick="slowScroll('#works');">Works</a></li>
+					<li class="item"><a href="#social" onclick="slowScroll('#social');">Social</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<br>
+
+		<content>
+			<div class="sections">
+				<section class="se-home" id="home">
+					<div>
+						<h1>We creating the world!</h1>
+						<div>
+							Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+						</div>
+					</div>
+				</section>
+				<br>
+				<section class="se-about" id="about">
+					<div>
+						<h1>About</h1>
+						<img src="img/img.png" width="80%">
+						<div>
+							Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+						</div>
+					</div>
+				</section>
+				<br>
+				<section class="se-work" id="works">
+					<div>
+						<h1>Works</h1>
+						<article>
+							<h1>Work 1</h1>
+							<img src="img/img.png" width="30%">
+							<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. </p>
+						</article>
+						<article>
+							<h1>Work 2</h1>
+							<img src="img/img.png" width="30%">
+							<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. </p>
+						</article>
+						<article>
+							<h1>Work 3</h1>
+							<img src="img/img.png" width="30%">
+							<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. </p>
+						</article>
+						<article>
+							<h1>Work 4</h1>
+							<img src="img/img.png" width="30%">
+							<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. </p>
+						</article>
+						<article>
+							<h1>Work 5</h1>
+							<img src="img/img.png" width="30%">
+							<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. </p>
+						</article>
+					</div>
+				</section>
+				<br>
+				<section class="se-social" id="social">
+					<div>
+						<h1>Social</h1>
+						<div class="social">
+							<ul>
+								<li><a href="#"><i class="fa fa-vk"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+								<li><a href="#"><i class="fa fa-odnoklassniki"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+		</content>
+		<br>
+		<footer>
+			<div>
+				<p>&copy; Untitled. All rights reserved.Design: Artem Yagodnik</p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		function slowScroll (id) {
+		    var offset = 0;
+		    $('html, body').animate ({
+		      	scrollTop: $(id).offset ().top - offset
+		    }, 600);
+		    return false;
+		}
+	</script>
+</body>
+</html>
